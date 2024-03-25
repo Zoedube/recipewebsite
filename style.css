@@ -1,0 +1,628 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fanwood Text", serif;
+  ;
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  background: #C8D2DB;
+}
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/background\ img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.logo{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-right: 40px;
+}
+.nav-bar ul{
+  display: flex;
+  list-style: none;
+}
+.nav-bar ul li a{
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding:8px 25px ;
+  transition: .2s;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.nav-bar ul li:hover a{
+  background-color: white;
+  color: #213032;
+  cursor: pointer;
+}
+.content{
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  transform: translateY(-50);
+}
+h1{
+  color: #edffef;
+  font-size: 75%;
+  margin: 20px 0px 20px;
+}
+h3{
+  color: #edffef;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+h4{
+  color: #edffef;
+  letter-spacing: 6px;
+  font-size: 40px ;
+
+}
+
+.button{
+  position: absolute;
+  background-color: #9bbedd;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid black;
+  font-style: "Fanwood Text", serif;
+  padding: 13px 30px;
+  transform: .4s;
+}
+.button:hover{
+  background-color:#edffef;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.button a{
+  text-decoration: none;
+  font-family: "Fanwood Text", serif;
+  color: white;
+  font-size: 20px;
+  padding:8px 25px ;
+  transition: .2s;
+  margin: 0 5px;
+  text-decoration: none;
+
+}
+.about{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #C8D2DB;
+}
+.about img{
+  height: auto;
+  width: 430px;
+  border-radius: 20px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about h2{
+  color:black;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-text p{
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.about-text{
+  width: 500px;
+}
+
+/*Recipe Section CSS*/
+.section-featured-recipes{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #ECE7E5;
+}
+.section-featured-recipes h2{
+  color: black;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-featured-recipes .box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.section-featured-recipes .card{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid none;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.section-featured-recipes .box .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .card .content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #edffef;
+  color: #182f32;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.box .card:hover .content{
+  opacity: 1;
+}
+.card h3{
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #213032;
+}
+.box .card p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.box .card button{
+  position:relative;
+  background-color: #C8D2DB;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid black;
+  font-weight: bold;
+  transform:.4s;
+  padding: 13px 30px;
+
+}
+.box .card button:hover{
+  background-color: white;
+  color: #9bbedd;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.recipe-card {
+  max-width: 1000px;
+  margin: auto;
+  background-color:  white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 1000px;
+  }
+
+  .recipe-image {
+  width: 100%;
+  height: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  }
+  
+  .recipe-details {
+  padding: 20px;
+  text-align: left;
+  width: 50%;
+  float: left;
+  }
+
+  .recipe-details h3{
+    color: black;
+    font-size: 30px;
+  }
+  
+  h1 {
+  color: cadetblue;
+  }
+  
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  }
+
+  .recipe-details ul{
+    margin-bottom: 0px;
+  }
+
+  .recipe-details h3{
+    margin-bottom: 10px;
+  }
+  
+  li {
+  margin-bottom: 5px;
+  }
+  
+  .section-korean-fried-chicken instructions {
+    padding: 50px;
+    text-align: left;
+    width: 50%;
+    float: right;
+  }
+
+  .section-korean-fried-chicken .recipe-details ol{
+    margin-top: 10px;
+  }
+
+  .section-korean-fried-chicken h2{
+    font-size: 30px;
+  }
+
+  p {
+  line-height: 1.6;
+  }
+
+  .section-korean-fried-chicken{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #C8D2DB;
+  
+  }
+  .section-korean-fried-chicken main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-korean-fried-chicken h1{
+    color:black;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .section-korean-fried-chicken-text p{
+    color: #ECE7E5;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  .section-korean-fried-chicken-text{
+    width: 500px;
+  }
+  .rating-css div{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .rating-css input{
+    display: none;
+  }
+  .rating-css input + label{
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .rating-css input[type="radio"] {
+    display: none;
+  }
+  
+  .rating-css label {
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .rating-css label:hover,
+  .rating-css label:hover ~ label {
+    color: yellow;
+  }
+  
+  .rating-css input[type="radio"]:checked ~ label {
+    color: yellow;
+  }
+  
+  .rating-css input[type="radio"]:checked ~ label:before {
+    content: '\f005';
+    color: yellow;
+  }
+  
+  /* Contact us */
+
+  body {
+    background: #F2F3EB;
+  }
+  
+  button {
+    overflow: visible;
+  }
+  
+  button, select {
+    text-transform: none;
+  }
+  
+  button, input, select, textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+  }
+  
+  input {
+    line-height: normal;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  #container {
+    border: solid 3px #C8D2DB;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+  }
+  
+  form {
+    padding: 37.5px;
+    margin: 50px 0;
+  }
+  
+  h1 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .underline {
+    border-bottom: solid 2px  #C8D2DB;
+    margin: -0.512em auto;
+    width: 80px;
+  }
+  
+  .icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+  }
+  
+  .icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+  }
+  
+  .email {
+    float: right;
+    width: 45%;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  input[type='text']:focus, [type='email']:focus, textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+  }
+  
+  .message {
+    float: none;
+  }
+  
+  .name {
+    float: left;
+    width: 45%;
+  }
+  
+  select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .subject {
+    width: 100%;
+  }
+  
+  .telephone {
+    width: 100%;
+  }
+  
+  textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #474544;
+  }
+  
+  :-moz-placeholder { 
+    color: #474544;
+    opacity: 1;
+  }
+  
+  ::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: #474544;
+  }
+  
+  #form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  #form_button:hover {
+    background: #C8D2DB;
+    color: #F2F3EB;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #container {
+      margin: 20px auto;
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 40px;
+    }
+    
+    .underline {
+      width: 68px;
+    }
+    
+    #form_button {
+      padding: 15px 25px;
+    }
+  }
+  
+  @media screen {
+    h1 {
+      font-size: 18px;
+    }
+    
+    input[type='text'], [type='email'], select, textarea {
+      font-size: 0.875em;
+    }
+  }
+
+  /* Footer */
+  footer {
+    background-color:  #C8D2DB;
+    color:  #C8D2DB;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-container p {
+    margin: 0
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:#F2F3EB;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+  }
+  
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footerNav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .footerBottom{
+  
+    background-color:  #C8D2DB;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footerBottom p{
+    color: black;
+  
+  }
+
+
+  
+
